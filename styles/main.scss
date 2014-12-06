@@ -5,39 +5,22 @@ $brand-primary: #17AEFF;
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 
 
-/* Space out content a bit */
+/* Take into account navbar height */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: $navbar-height;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+section {
+  margin-top: 20px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 30px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
+/* Page footer */
+footer {
   margin-top: 20px;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 /* Main marketing message and sign up button */
@@ -58,18 +41,6 @@ body {
     max-width: 730px;
   }
   */
-
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
 
 
